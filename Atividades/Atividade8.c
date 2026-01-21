@@ -1,82 +1,45 @@
-// REGISTRO DE OPERADORA 
-// ALUNO: Matheus Almeida Dos Santos
-//29.08.2025
-
-
 #include <stdio.h>
 
-int main()
-{
-char letra;
-char nome[10];
-int operadora;
-char local [20];
-
-printf("\n--=====================================--\n");
-printf("  [1] - TIM - [2] - CLARO  - [3] - VIVO");
-printf("\n--=====================================--\n");
-
-printf("DIGITE SEU NOME: ");
-scanf("%s", nome);
-
-printf("ESCOLHA SUA OPERADORA: ");
-scanf("%d", &operadora);
-
-switch(operadora){
-    case 1:
-    printf("\nTIM FOI ESCOLHIDA!");
+int main(){
+    int opcao;
     
-    printf("\n\nDIGITE 'Y' PARA CONFIRMAÇÃO E 'N' PARA CANCELAR: ");
-    scanf(" %c", &letra);
-        if((letra == 'y') || (letra == 'Y')){
-        printf("CONFIRMADO");
-        }else{
-        if((letra == 'n') || (letra == 'N')){
-        printf("CANCELADO");
-        }else{
-        printf("CONFIRMAÇÃO INVÁLIDA");
-        }
-        }
-    break;
-    
-    case 2:
-    printf("\nCLARO FOI ESCOLHIDA!");
-    
-        printf("\n\nDIGITE 'Y' PARA CONFIRMAÇÃO E 'N' PARA CANCELAR: ");
-    scanf(" %c", &letra);
-        if((letra == 'y') || (letra == 'Y')){
-        printf("CONFIRMADO");
-        }else{
-        if((letra == 'n') || (letra == 'N')){
-        printf("CANCELADO");
-        }else{
-        printf("CONFIRMAÇÃO INVÁLIDA");
-        }
-        }
-    break;
-    
-    case 3:
-    printf("\nVIVO FOI ESCOLHIDA!");
-    
-        printf("\n\nDIGITE 'Y' PARA CONFIRMAÇÃO E 'N' PARA CANCELAR: ");
-    scanf(" %c", &letra);
-        if((letra == 'y') || (letra == 'Y')){
-        printf("CONFIRMADO");
-        }else{
-        if((letra == 'n') || (letra == 'N')){
-        printf("CANCELADO");
-        }else{
-        printf("CONFIRMAÇÃO INVÁLIDA");
-        }
-        }
-    break;
-    
-    default:
-    printf("\nOPÇÃO INVÁLIDA");
-}
-
-printf("\n\nTAREFA FINALIZADA!");
-
-    return 0;
-    
+    printf("Bem vindo ao serviço de operadora, por favor selecione uma das opções abaixo: \n1-CLARO \n2-TIM \n3-VIVO \n4-OI \n ");
+    scanf("%d", &opcao);
+    switch(opcao){
+        case 1:
+            char cidade1[30];
+            printf("Bem vindo a operadora CLARO\n");
+            printf("Por favor digite sua cidade: \n");
+            scanf("%s", cidade1);
+            printf("Certo, iremos ti encaminhar para a operadora da sua região\nAguarde no programa");
+            break;
+        
+        case 2:
+            char cidade2[30];
+            printf("Bem vindo a operadora TIM\n");
+            printf("Por favor digite sua cidade: \n");
+            scanf("%s", cidade2);
+            printf("Certo, iremos ti encaminhar para a operadora da sua região\nAguarde no programa");
+        break;
+        
+        case 3:
+            char cidade3[30];
+            printf("Bem vindo a operadora VIVO\n");
+            printf("Por favor digite sua cidade: \n");
+            scanf("%s", cidade3);
+            printf("Certo, iremos ti encaminhar para a operadora da sua região\nAguarde no programa");
+        break;
+        
+        case 4:
+            char cidade4[30];
+            printf("Bem vindo a operadora OI\n");
+            printf("Por favor digite sua cidade: \n");
+            scanf("%s", cidade4);
+            printf("Certo, iremos ti encaminhar para a operadora da sua região\nAguarde no programa");
+        break;
+        
+        default:
+            printf("Você digitou nenhuma opção valida");
+        break;
+    }
 }

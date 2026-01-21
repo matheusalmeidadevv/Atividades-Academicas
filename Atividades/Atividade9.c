@@ -1,6 +1,6 @@
 // STTRUCT & CADASTRO
 // DATA: 08.09.2025
-//ALUNOS: ERICK AZEVEDO & JOÃO VICTOR DOS SANTOS
+//ALUNOS: Matheus Almeida Dos Santos
 
 #include <stdio.h>
 #include <conio.h>

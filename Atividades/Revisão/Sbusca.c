@@ -27,17 +27,31 @@ int sistema_buscaS() {
 }
 
 int sistema_buscaB(){
-    // Implementação do sistema de busca binaria
-
     int nums[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int chave;
+    int chave, inicio, meio, fim;
+
+    inicio = 0;
+    fim = 9;
 
     printf("Digite um numero de 1 a 10:\n");
     scanf(" %d", &chave);
 
+    while(inicio <= fim){
+        meio = inicio + (fim - inicio) / 2;
+        printf("Inicio: %d, Fim: %d, Meio: %d, Valor no meio: %d\n", inicio, fim, meio, nums[meio]);
 
+        if(nums[meio] == chave){
+            printf("Encontrado! Seu numero esta na posição %d \n\n", meio);
+            return 0;
+        } else if(nums[meio] < chave){
+            inicio = meio + 1;
+        } else {
+            fim = meio - 1;
+        }
+    }
 
-
+    printf("numero não encontrado!\n\n");
+    return 0;
 }
 
 int main() {

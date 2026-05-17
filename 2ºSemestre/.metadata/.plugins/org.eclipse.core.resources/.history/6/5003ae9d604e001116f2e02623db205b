@@ -1,0 +1,6 @@
+
+public interface DanoCritico {
+	
+	int danoC = IArma.calcularDano() * 2;
+	
+}

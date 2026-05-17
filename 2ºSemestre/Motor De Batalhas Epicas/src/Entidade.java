@@ -1,0 +1,19 @@
+
+public abstract class Entidade {
+	
+	protected String nome;
+	protected int nivel;
+	
+	public Entidade(String nome, int nivel) {
+		
+		super();
+		
+		this.nome  = nome;
+		this.nivel = nivel;
+		
+	}
+	
+	
+	public abstract String  Descricao();
+	
+}

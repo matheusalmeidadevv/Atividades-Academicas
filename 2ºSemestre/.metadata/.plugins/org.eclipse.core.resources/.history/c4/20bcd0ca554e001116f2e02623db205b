@@ -1,0 +1,11 @@
+
+public class Dragao extends Entidade{
+
+	
+	public Dragao(String nome, int nivel) {
+		
+		super(nome, nivel);
+		
+	}
+	
+}

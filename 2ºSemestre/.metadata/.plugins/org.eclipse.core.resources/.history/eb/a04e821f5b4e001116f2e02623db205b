@@ -1,0 +1,19 @@
+
+public class IArma {
+	
+	private String tipoArma;
+	
+	
+	public IArma(String tipoArma) {
+		
+		this.tipoArma = tipoArma;
+		
+	}
+	
+	public int calcularDano() {
+		
+		return Guerreiro.getForca() + 5;
+		
+	}
+	
+}

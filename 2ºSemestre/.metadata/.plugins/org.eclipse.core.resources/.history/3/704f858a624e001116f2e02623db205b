@@ -1,0 +1,10 @@
+
+public interface DanoCritico extends IEstrategiaDano {
+	
+	public int danoBase(danoBase) {
+		
+		return danoBase * 2;
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+
+public class Desenvolvedor extends Funcionario{
+
+	public Desenvolvedor(String nome, double salarioBase) {
+		super(nome, salarioBase);
+	}
+	
+	
+	public double calcularSalario() {
+		
+		return salarioBase * 1.10;
+		
+	}
+	
+		
+	@Override
+	public String exibirDados(){
+		
+		return "\n\nDados do Desenvolvedor\n\n Nome: " + this.nome + "\nSalario: " + calcularSalario();
+		
+	} 
+
+}

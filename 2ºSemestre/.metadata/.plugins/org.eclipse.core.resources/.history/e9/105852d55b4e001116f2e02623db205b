@@ -1,0 +1,18 @@
+
+public interface IDano {
+	
+	int danoBase = IArma.calcularDano();
+	
+	public default int aplicarBonus() {
+		
+		 return danoBase;
+	
+	}
+	
+	public int DanoCritico() {
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+
+public interface IDano {
+	
+	
+	public default int aplicarBonus(int danoBase) {
+		
+		return danoBase = IArma.getForca();
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+public interface IArma {
+	
+	Armas arma = Armas.SemArma;
+	
+	public static int calcularDano() {
+		
+		if(arma == Armas.SemArma) {
+			
+		}
+		
+	}
+}

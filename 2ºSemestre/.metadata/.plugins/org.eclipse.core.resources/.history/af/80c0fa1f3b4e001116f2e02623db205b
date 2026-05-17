@@ -1,0 +1,13 @@
+
+public class Arma {
+	
+	private String tipoArma;
+	
+	
+	public Arma(String tipoArma) {
+		
+		this.tipoArma = tipoArma;
+		
+	}
+	
+}

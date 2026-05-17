@@ -1,0 +1,38 @@
+
+public class Gerente extends Funcionario implements IAutenticavel{
+
+	public Gerente(String nome, double salarioBase) {
+		super(nome, salarioBase);
+	}
+	
+	
+	public double calcularSalario() {
+		
+		return salarioBase * 1.20;
+		
+	}
+	
+	public void Autenticar(String senha) {
+		0
+		if(senha.equals(1234)) {
+			
+			
+			System.out.println("A senha esta correta");
+		
+		}
+		else {
+			
+			System.out.println("Senha incorreta");
+			
+		}
+		
+	}
+	
+	@Override
+	public String exibirDados(){
+		
+		return "\n\nDados do Gerente\n\n Nome: " + this.nome + "\n Salario: " + calcularSalario();
+		
+	} 
+
+}

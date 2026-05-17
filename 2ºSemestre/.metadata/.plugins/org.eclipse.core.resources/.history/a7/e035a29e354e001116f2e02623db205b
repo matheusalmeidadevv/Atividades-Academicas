@@ -1,0 +1,18 @@
+
+public class Guerreiro extends Entidade{
+	
+	private int vida = 0, mana = 0, forca = 0;
+	
+	public Guerreiro(String nome, int nivel) {
+		
+		super(nome, nivel);
+		
+	}
+	
+	public String Atributosfisicos() {
+		
+		return "\nGuerreiro Ficha:\n Vida = " + vida + "\n Mana = " + mana + "\n Força = " + forca;
+		
+	}
+	
+}

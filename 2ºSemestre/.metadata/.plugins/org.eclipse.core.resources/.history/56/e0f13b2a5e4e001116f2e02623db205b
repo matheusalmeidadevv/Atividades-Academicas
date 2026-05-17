@@ -1,0 +1,13 @@
+
+public interface IDano extends DanoCritico{
+	
+		
+	
+	public default int aplicarBonus() {
+		
+		int dano;
+		 return dano = IDano.danoC;
+	
+	}
+		
+}

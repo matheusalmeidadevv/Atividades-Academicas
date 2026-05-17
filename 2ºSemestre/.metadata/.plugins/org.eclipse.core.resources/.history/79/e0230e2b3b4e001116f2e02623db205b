@@ -1,0 +1,22 @@
+
+public class Guerreiro extends Entidade{
+	
+	private int vida, mana, forca;
+	private IArma arma;
+	
+	public Guerreiro(String nome, int nivel) {
+		
+		super(nome, nivel);
+		
+		AtributosFisicos Atributos = new AtributosFisicos(vida, mana, forca);
+	
+	}
+	
+	public void setArma(String armaE) {
+		
+		this.IArma = armaE;
+		
+	}
+	
+		
+}

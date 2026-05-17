@@ -1,0 +1,60 @@
+
+public class Guerreiro extends Entidade{
+	
+	private int vida, mana;
+	private static int forca;
+	private IArma arma;
+	private Classes classe;
+	private AtributosFisicos atributos;
+	
+	public Guerreiro(String nome, int nivel, Classes classe) {
+		
+		super(nome, nivel);
+		this.classe = classe; 
+		
+		this.atributos = new AtributosFisicos(100, 20, 50);
+		
+	
+	}
+	
+	public void setArma(IArma armaE) {
+		
+		this.arma = armaE;
+		
+	}
+	
+	
+	
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+	public int getMana() {
+		return mana;
+	}
+
+	public void setMana(int mana) {
+		this.mana = mana;
+	}
+
+	public static int getForca() {
+		return forca;
+	}
+
+	public void setForca(int forca) {
+		this.forca = forca;
+	}
+
+	@Override
+	public void Descricao(){
+		
+		System.out.println("\n =======Ficha do "+ classe +" - " + nome + " -=======\n\n Nivel = " + nivel);
+		
+	}
+	
+		
+}

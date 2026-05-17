@@ -1,6 +1,0 @@
-
-public interface IEstrategiaDano {
-	
-	int danoBase = IArma.calcularDano();
-	
-}

@@ -1,9 +1,0 @@
-
-public interface IArma {
-	
-	public static int calcularDano() {
-		
-		return Guerreiro.getForca() + 5;
-		
-	}
-}

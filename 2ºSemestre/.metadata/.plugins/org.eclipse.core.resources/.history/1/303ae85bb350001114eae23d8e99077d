@@ -1,6 +1,0 @@
-
-public Interface IAutenticavel {
-
-	public void Autenticar(String senha);
-
-}

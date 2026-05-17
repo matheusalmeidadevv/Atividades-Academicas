@@ -1,6 +1,0 @@
-
-public enum Armas {
-	
-	Espada, Adaga, Cajado, Machado, Arco, EspadaGrande;
-	
-}

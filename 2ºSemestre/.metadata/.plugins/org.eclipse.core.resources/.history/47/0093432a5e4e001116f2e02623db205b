@@ -1,6 +1,0 @@
-
-public interface IEstrategiaDano {
-	
-	public int aplicarBonus(int danobase);
-		
-}
